@@ -29,6 +29,12 @@
   color: var(--text-color);
   font-size: 0.8rem;
   white-space: nowrap;
+  padding: 4px;
+  transition: color 0.3s ease-in-out;
+}
+
+.home-page .nav .nav__list .nav__item .nav__link:hover {
+  color: var(--secondary-color);
 }
 
 .home-page .nav .nav__list .nav__item.logo__container {
@@ -42,6 +48,11 @@
     border: 1px solid var(--text-color);
     border-radius: var(--border-radius);
     padding: 8px 16px;
+}
+
+.home-page .nav .nav__list .nav__item .nav__link.contact-us:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .home-page .nav .nav__list .nav__item:first-of-type {
@@ -65,4 +76,8 @@
     height: 1px;
     background-color: var(--secondary-color);
     transition: width 0.3s ease-in-out;
+}
+
+.home-page .nav .nav__list .nav__item.exam-reg:hover::after {
+    width: 0;
 }

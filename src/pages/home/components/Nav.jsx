@@ -1,6 +1,6 @@
 import React from 'react'
 import './Nav.css'
-import SvgFullWhite from '../../../assets/logo/FullWhite'
+import SvgFullColored from '../../../assets/logo/FullColored'
 import { Link } from 'react-router-dom'
 
 function Nav() {
@@ -9,7 +9,7 @@ function Nav() {
         <ul className='nav__list'>
             <li className='nav__item logo__container'>
                 <Link to={"/"} className='nav__link'>
-                    <SvgFullWhite className="logo" />
+                    <SvgFullColored className="logo" />
                 </Link>
             </li>
             <li className='nav__item'>

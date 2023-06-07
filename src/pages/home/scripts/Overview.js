@@ -6,11 +6,11 @@ import Button from '../components/Button'
 function Overview() {
 
   return (
-    <section className='overview-page'>
+    <section className='overview-section'>
       <div className='accordion'>
         { 
           overviewData.content.map((x, i) => {
-            return <Accordion title={overviewData.titles[i]} content={x.map(x => x.title)} />
+            return <Accordion key={i} title={overviewData.titles[i]} content={x.map(x => x.title)} />
           })
         }
       </div>

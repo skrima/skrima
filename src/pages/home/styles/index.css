@@ -31,11 +31,13 @@
     font-weight: 700;
     padding: 0 2rem;
     margin-bottom: 2rem;
+    cursor: default;
 }
 
 .home-page .title-section p {
     font-size: 0.9rem;
     font-weight: 300;
+    cursor: default;
 }
 
 .home-page .title-section img {
@@ -44,7 +46,7 @@
 }
 
 /* OVERVIEW */
-.overview-page {
+.overview-section {
     display: flex;
     flex-flow: column;
     gap: 5rem;
@@ -53,6 +55,74 @@
 }
 
 /* SERVICES */
-.services-page {
-    
+.services-section {
+
+}
+
+/* FOOTER */
+.footer-section {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: var(--page-padding);
+    padding-bottom: 1rem;
+    padding-top: calc(var(--nav-height) + 3rem);
+    text-align: center;
+    gap: 3rem;
+}
+
+.footer-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 0 0.5rem;
+}
+
+.footer-section .footer-main {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.footer-section .footer-main__left {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.footer-section .footer-main__left > .text-container {
+    max-width: 600px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-section .footer-main__left h2 {
+
+}
+
+.footer-section .footer-main__left p {
+    font-size: 0.9rem;
+}
+
+.footer-section .footer-main__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.footer-section .footer-socials {
+    margin-top: auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }

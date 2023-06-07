@@ -1,0 +1,11 @@
+.circular-pointer {
+  position: fixed; /* Change from absolute to fixed */
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 128, 0.7); /* Adjust the green color and transparency as needed */
+  box-shadow: 0 0 20px 10px rgba(0, 255, 128, 0.3); /* Add a box-shadow for the glow effect */
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 99; /* Ensure the circular pointer stays on top of other elements */
+}
