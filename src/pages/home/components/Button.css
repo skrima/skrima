@@ -1,0 +1,30 @@
+.home-page__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: black;
+    padding: 0.8rem 2.8rem;
+    white-space: nowrap;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    border: 2px solid black;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: var(--off-white);
+}
+
+.home-page__button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.home-page__button.yellow {
+    background-color: var(--secondary-color);
+}
+
+.home-page__button.green {
+    background-color: var(--primary-color);
+}
