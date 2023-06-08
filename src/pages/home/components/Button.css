@@ -39,3 +39,42 @@
   background-color: var(--background-color);
   color: white;
 }
+
+@media (hover: none) {
+
+  .home-page__button {
+    transition: none;
+  }
+
+  .home-page__button:hover{
+    background-color: var(--off-white);
+    color: black;
+    border: 2px solid black;
+  }
+
+  .home-page__button.yellow:hover {
+    background-color: var(--secondary-color);
+    color: black;
+  }
+
+  .home-page__button.green:hover {
+    background-color: var(--primary-color);
+    color: black;
+  }
+
+  .home-page__button:active {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .home-page__button.yellow:active {
+    background-color: var(--background-color);
+    color: white;
+  }
+
+  .home-page__button.green:active {
+    background-color: var(--background-color);
+    color: white;
+  }
+}

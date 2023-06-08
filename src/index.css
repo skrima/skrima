@@ -97,3 +97,9 @@ html::-webkit-scrollbar-thumb:hover {
 html::-webkit-scrollbar-thumb:active {
   background: var(--primary-color);
 }
+
+@media (pointer:none), (pointer:coarse) {
+  html::-webkit-scrollbar {
+    width: 0px;
+  }
+}
