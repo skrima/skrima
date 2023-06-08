@@ -1,13 +1,13 @@
 .exam-card__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1.1rem;
-    flex-basis: calc(50% - 0.2rem);
-    border: 1px solid var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.1rem;
+  flex-basis: calc(50% - 0.2rem);
+  border: 1px solid var(--background-color);
 }
 
 .exam-card__item .exam-card__title {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }

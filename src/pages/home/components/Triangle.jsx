@@ -1,10 +1,8 @@
-import React from 'react'
-import './Triangle.css'
+import React from "react";
+import "./Triangle.css";
 
 function Triangle() {
-  return (
-    <div className='services-triangle' />
-  )
+  return <div className="services-triangle" />;
 }
 
-export default Triangle
+export default Triangle;
