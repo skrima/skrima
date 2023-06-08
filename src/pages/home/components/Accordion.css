@@ -1,5 +1,6 @@
 .accordion-item {
     position: relative;
+    width: 100%;
 }
 
 .accordion-item__line {
@@ -23,7 +24,8 @@
   cursor: pointer;
   border-bottom: 1px solid var(--border-color-white);
   transition: all 0.3s ease-in-out;
-  width: 600px;
+  width: 100vw;
+  max-width: 600px;
 }
 
 

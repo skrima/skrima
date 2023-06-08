@@ -7,7 +7,7 @@ import FooterSocial from '../components/FooterSocial';
 function Footer() {
   const videoId = 'K4TOrB7at0Y';
   const opts = {
-    height: '400',
+    height: '300',
     width: '400',
     playerVars: {
       autoplay: 1,

@@ -1,27 +1,31 @@
-const whatwedo = [
+export const whatwedo = [
     {
         title: 'Website development',
-        content: ''
+        content: 'Unlock your online potential with captivating and responsive websites that leave a lasting impression.'
     },
     {
         title: 'Automation solutions',
-        content: ''
+        content: 'Make a statement with compelling visuals, including logo design and visual identity creation, that resonate with your target audience.'
     },
     {
         title: 'Design and branding',
-        content: ''
+        content: 'Enhance your online presence, engage your audience, and grow your social media following with strategic content creation and campaign management.'
     },
     {
         title: 'Social media management',
-        content: ''
+        content: 'Streamline your business processes, save time, and increase efficiency with innovative automation solutions tailored to your specific needs.'
     },
     {
         title: 'AI integration',
-        content: ''
+        content: 'Harness the power of artificial intelligence technologies, such as chatbots and data analysis, to enhance your business operations and drive intelligent solutions.'
+    },
+    {
+        title: 'IT consultancy',
+        content: 'Leverage our expertise and industry knowledge with our IT consultancy service. We provide strategic guidance and tailored solutions to help you navigate the ever-changing IT landscape, optimize your technology infrastructure, and make informed decisions for your business growth.'
     },
     {
         title: 'International exams registration assistance',
-        content: ''
+        content: 'Simplify the process of international exam registration with dedicated assistance for individuals and organizations, ensuring a smooth and hassle-free experience.'
     }
 ]
 

@@ -27,6 +27,7 @@
 body {
   color: var(--text-color);
   font-family: var(--font-family);
+  overflow-x: hidden;
 }
 
 /* SCROLLBAR */

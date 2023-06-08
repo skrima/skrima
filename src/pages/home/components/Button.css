@@ -13,6 +13,7 @@
     font-size: 0.8rem;
     font-weight: 500;
     background-color: var(--off-white);
+    width: 12rem;
 }
 
 .home-page__button:hover {
@@ -25,6 +26,16 @@
     background-color: var(--secondary-color);
 }
 
+.home-page__button.yellow:hover {
+    background-color: var(--background-color);
+    color: white;
+}
+
 .home-page__button.green {
     background-color: var(--primary-color);
+}
+
+.home-page__button.green:hover {
+    background-color: var(--background-color);
+    color: white;
 }

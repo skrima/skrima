@@ -2,8 +2,8 @@ import React from 'react'
 import Title from './scripts/Title'
 import Overview from './scripts/Overview'
 import Services from './scripts/Services'
-import Fouth from './scripts/Fouth'
-import Fifth from './scripts/Fifth'
+import Community from './scripts/Community'
+import Mission from './scripts/Mission'
 import Footer from './scripts/Footer'
 import './styles/index.css'
 import Nav from './components/Nav'
@@ -17,8 +17,8 @@ function Home() {
         <Title />
         <Overview />
         <Services />
-        <Fouth />
-        <Fifth />
+        <Community />
+        <Mission />
         <Footer />
     </div>
   )
