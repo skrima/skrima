@@ -26,7 +26,6 @@ function Community() {
           target={"_blank"}
           delayed
           delay={2000}
-          replace
           setShowConfetti={setShowConfetti}
         />
       </div>
