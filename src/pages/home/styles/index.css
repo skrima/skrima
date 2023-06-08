@@ -58,7 +58,7 @@
 /* SERVICES */
 .services-section {
   position: relative;
-  min-height: 150vh;
+  min-height: 130vh;
   height: auto;
   margin-top: 32px;
   color: black;
@@ -81,7 +81,7 @@
   align-items: center;
   margin: var(--page-padding);
   padding-top: calc(var(--nav-height) + 3rem);
-  min-height: calc(150vh - 4rem);
+  min-height: calc(130vh);
   height: auto;
   background-color: var(--off-white);
   width: calc(100vw - 4rem);
@@ -186,6 +186,19 @@
   gap: 0.4rem;
   justify-content: center;
 }
+
+@media screen and (max-width: 1249px) {
+  .services-triangle {
+    display: none;
+  }
+  .services-container {
+    margin: 0 !important;
+    width: 100vw !important;
+  }
+}
+
+
+
 /* COMMUNITY */
 .community-section {
   position: relative;

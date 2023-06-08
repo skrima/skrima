@@ -2,7 +2,7 @@
   width: 0;
   height: 0;
   border-bottom: 200vh solid #000000; /* Adjust the height and color as needed */
-  border-right: 150vw solid transparent; /* Adjust the width as needed */
+  border-right: 130vw solid transparent; /* Adjust the width as needed */
   background-color: var(--off-white);
   rotate: 180deg;
 }

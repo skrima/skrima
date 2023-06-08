@@ -6,7 +6,9 @@
   height: var(--nav-height);
   background-color: var(--background-color);
   z-index: 100;
-  padding: var(--page-padding);
+  display: flex;
+  flex-flow: column;
+  gap: 0;
 }
 
 .home-page .nav .nav__list {
@@ -33,8 +35,12 @@
   transition: color 0.3s ease-in-out;
 }
 
-.home-page .nav .nav__list .nav__item .nav__link:hover {
+.home-page .nav .nav__list :is(.nav__item, .nav__link) :is(:hover, :active) {
   color: var(--secondary-color);
+}
+
+.home-page .nav .nav__list .nav__item._open :is(:hover, :active) {
+  color: var(--red-color);
 }
 
 .home-page .nav .nav__list .nav__item.logo__container {
@@ -56,6 +62,7 @@
 }
 
 .home-page .nav .nav__list .nav__item:first-of-type {
+  margin: var(--page-padding);
   margin-right: auto;
 }
 
@@ -63,12 +70,119 @@
   margin-left: auto;
 }
 
-.home-page .nav .nav__list .nav__item.exam-reg {
+.home-page .nav .nav__list .nav__item.nav__contact {
+  margin: var(--page-padding);
+  margin-left: auto;
+} 
+
+.home-page .nav .nav__list .nav__item.nav__menu {
+  margin: var(--page-padding);
+  margin-left: auto;
+  display: none;
+  cursor: pointer;
+}
+
+.nav__menu__container {
+  display: none;
+}
+
+.nav__menu__container._open {
+  display: block;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.nav__menu__container._open .nav__menu {
+  list-style: none;
+}
+
+.nav__menu__container._open .nav__menu .nav__menu__item {
+  padding: 1rem;
+  border-bottom: 1px solid var(--text-color);
+  cursor: pointer;
+}
+
+/* I need a very cool hover effect */
+.nav__menu__container._open .nav__menu .nav__menu__item:is(:hover, :active) {
+  background-color: var(--secondary-color);
+}
+
+.nav__menu__container._open .nav__menu .nav__menu__item:last-of-type {
+  border-bottom: none;
+}
+
+.nav__menu__container._open .nav__menu .nav__menu__item .nav__menu__link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+  /* Make the link width stretch out */
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav__menu__container._open .nav__menu .nav__menu__item:hover .nav__menu__link {
+  color: black;
+}
+
+@media screen and (max-width: 1199px) {
+  .home-page .nav .nav__list .nav__item.nav__products {
+    display: none;
+  }
+  
+  .home-page .nav .nav__list .nav__item.nav__support {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .home-page .nav .nav__list .nav__item.nav__gallery {
+    display: none;
+  }
+  
+  .home-page .nav .nav__list .nav__item.nav__blog {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 819px) {
+  .home-page .nav .nav__list .nav__item.nav__exam {
+    display: none !important;
+  }
+
+  .home-page .nav .nav__list .nav__item.nav__community {
+    display: none !important;
+  }
+
+  .home-page .nav .nav__list .nav__item.nav__services {
+    display: none !important;
+  }
+
+  .home-page .nav .nav__list .nav__item.nav__company {
+    display: none !important;
+  }
+
+  .home-page .nav .nav__list .nav__item.nav__events {
+    display: none !important;
+  }
+
+  .home-page .nav .nav__list .nav__item.nav__contact {
+    display: none !important;
+  }
+
+  .home-page .nav .nav__list .nav__item.nav__menu {
+    display: inline !important;
+  }
+}
+
+.home-page .nav .nav__list .nav__item.nav__exam {
   position: relative;
   display: flex;
   flex-flow: column;
 }
-.home-page .nav .nav__list .nav__item.exam-reg::after {
+.home-page .nav .nav__list .nav__item.nav__exam::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -78,6 +192,6 @@
   transition: width 0.3s ease-in-out;
 }
 
-.home-page .nav .nav__list .nav__item.exam-reg:hover::after {
+.home-page .nav .nav__list .nav__item.nav__exam:hover::after {
   width: 0;
 }
