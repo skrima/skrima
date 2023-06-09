@@ -14,6 +14,12 @@
   font-weight: 500;
   background-color: var(--off-white);
   width: 12rem;
+  outline: none;
+}
+
+.home-page__button:active,
+.home-page__button:focus {
+  outline: none;
 }
 
 .home-page__button:hover {
