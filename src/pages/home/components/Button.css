@@ -14,13 +14,16 @@
   font-weight: 500;
   background-color: var(--off-white);
   width: 12rem;
-  outline: none;
+  outline: none !important;
+  user-select: none;
 }
 
+.home-page__button:focus,
 .home-page__button:active,
-.home-page__button:focus {
-  outline: none;
+.home-page__button:active:focus {
+  outline: none !important;
 }
+
 
 .home-page__button:hover {
   background-color: black;
@@ -68,19 +71,11 @@
     color: black;
   }
 
-  .home-page__button:active {
+  .home-page__button:active,
+  .home-page__button.yellow:active,
+  .home-page__button.green:active {
     background-color: black;
     color: white;
     border: 2px solid white;
-  }
-
-  .home-page__button.yellow:active {
-    background-color: var(--background-color);
-    color: white;
-  }
-
-  .home-page__button.green:active {
-    background-color: var(--background-color);
-    color: white;
   }
 }

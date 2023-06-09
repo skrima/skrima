@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import YouTube from "react-youtube";
 import { socials } from "../data/footer-data";
 import FooterSocial from "../components/FooterSocial";
+import "../styles/index.css"
 
 function Footer() {
   const videoId = "K4TOrB7at0Y";
   const opts = {
     height: "300",
-    width: "400",
+    width: "100%",
     playerVars: {
       autoplay: 1,
     },
@@ -55,7 +56,7 @@ function Footer() {
       </div>
       <div className="footer-legal">
         <small>
-          © 2023 SKRIMA. All rights reserved. |{" "}
+          © 2023 SKRIMA. All rights reserved. <div className="legal__break" /><span className="legal__pipe">|</span>{" "}
           <Link to={"/"}>Privacy Policy</Link> |{" "}
           <Link to={"/"}>Terms of Service</Link> |{" "}
           <Link to={"/"}>Image Credits</Link>
