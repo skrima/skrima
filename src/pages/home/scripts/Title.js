@@ -1,5 +1,5 @@
 import React from "react";
-import titleImage from "../assets/title_image.png";
+import titleImage from "../assets/images/title_image.png";
 
 function Title() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/index.css";
-import communityImage from "../assets/community-image.png";
+import communityImage from "../assets/images/community-image.png";
 import SvgLinesLeft from "../assets/LinesLeft";
 import SvgLinesRight from "../assets/LinesRight";
 import Button from "../components/Button";

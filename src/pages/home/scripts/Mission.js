@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
-import missionImage from "../assets/mission-image.png";
+import missionImage from "../assets/images/mission-image.png";
 import "../styles/index.css";
 
 function Mission() {

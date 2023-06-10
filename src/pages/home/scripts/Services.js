@@ -50,6 +50,7 @@ function Services() {
           <div className="services-content__right">
             <div className="services-content__right__item">
               <img
+                className="services-content__right__item__img"
                 src={whatwedo.find((item) => item.title === selected).img}
                 alt="services"
               />
