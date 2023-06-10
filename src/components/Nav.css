@@ -66,7 +66,7 @@
   color: var(--secondary-color);
 }
 
-.nav .nav__list .nav__item .nav__link.nav__contact._selected {
+.nav .nav__list .nav__item .nav__link.contact-us._selected {
   border-color: var(--primary-color);
   color: var(--primary-color);
 }
@@ -74,10 +74,6 @@
 .nav .nav__list .nav__item:first-of-type {
   margin: var(--page-padding);
   margin-right: auto;
-}
-
-.nav .nav__list .nav__item:last-of-type {
-  margin-left: auto;
 }
 
 .nav .nav__list .nav__item.nav__contact {
@@ -217,6 +213,10 @@
 
 .nav .nav__list .nav__item.nav__exam:hover::after {
   width: 0;
+}
+
+.nav .nav__list .nav__item.nav__exam._selected .nav__link {
+  color: var(--primary-color);
 }
 
 .nav .nav__list .nav__item.nav__exam._selected::after {

@@ -64,8 +64,8 @@ function Nav() {
             Support
           </Link>
         </li>
-        <li className="nav__item nav__exam">
-          <Link to={"/exam"} className={`nav__link nav__exam ${selected === "exam" ? "_selected" : ""}`}>
+        <li className={`nav__item nav__exam ${selected === "exam" ? "_selected" : ""}`}>
+          <Link to={"/exam"} className={`nav__link`}>
             Exam Registration
           </Link>
         </li>
@@ -80,8 +80,8 @@ function Nav() {
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </li>
-        <li className={`nav__item nav__contact ${selected === "contact" ? "_selected" : ""}`}>
-          <Link to={"/contact"} className="nav__link contact-us">
+        <li className={`nav__item nav__contact`}>
+          <Link to={"/contact"} className={`nav__link contact-us ${selected === "contact" ? "_selected" : ""}`}>
             Contact Us
           </Link>
         </li>
