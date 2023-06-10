@@ -13,6 +13,7 @@ function Footer() {
     playerVars: {
       autoplay: 1,
     },
+    origin: "https://skrima.com",
   };
 
   return (
