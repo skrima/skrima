@@ -20,8 +20,6 @@ function Nav() {
     setMenuOpen(!menuOpen);
   };
 
-  console.log(selected);
-
   return (
     <Fragment>
       <div className="nav">
@@ -91,52 +89,52 @@ function Nav() {
       <div className={`nav__menu__container ${menuOpen ? "_open" : ""}`}>
         <ul className="nav__menu">
           <li className="nav__menu__item">
-            <Link to={"/company"} className="nav__menu__link">
+            <Link to={"/company"} className={`nav__menu__link ${selected === "company" ? "_selected" : ""}`}>
               Company
             </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to={"/products"} className="nav__menu__link">
+            <Link to={"/products"} className={`nav__menu__link ${selected === "products" ? "_selected" : ""}`}>
               Products
             </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to={"/services"} className="nav__menu__link">
+            <Link to={"/services"} className={`nav__menu__link ${selected === "services" ? "_selected" : ""}`}>
               Services
             </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to={"/events"} className="nav__menu__link">
+            <Link to={"/events"} className={`nav__menu__link ${selected === "events" ? "_selected" : ""}`}>
               Events
             </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to={"/gallery"} className="nav__menu__link">
+            <Link to={"/gallery"} className={`nav__menu__link ${selected === "gallery" ? "_selected" : ""}`}>
               Gallery
             </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to={"/community"} className="nav__menu__link">
+            <Link to={"/community"} className={`nav__menu__link ${selected === "community" ? "_selected" : ""}`}>
               Community
             </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to={"/support"} className="nav__menu__link">
+            <Link to={"/support"} className={`nav__menu__link ${selected === "support" ? "_selected" : ""}`}>
               Support
             </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to={"/exam"} className="nav__menu__link">
+            <Link to={"/exam"} className={`nav__menu__link ${selected === "exam" ? "_selected" : ""}`}>
               Exam Registration
             </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to={"/blog"} className="nav__menu__link">
+            <Link to={"/blog"} className={`nav__menu__link ${selected === "blog" ? "_selected" : ""}`}>
               Blog
             </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to={"/contact"} className="nav__menu__link">
+            <Link to={"/contact"} className={`nav__menu__link ${selected === "contact" ? "_selected" : ""}`}>
               Contact Us
             </Link>
           </li>
