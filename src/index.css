@@ -12,7 +12,7 @@
   --secondary-color: #ffff00;
   --border-color-white: #ffffff;
   --off-white: #fafafa;
-  --red-color: #FF4040;
+  --red-color: #ff4040;
 
   /* FONTS */
   --font-family: "Inter", sans-serif;
@@ -26,9 +26,14 @@
 }
 
 body {
+  background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-family);
   overflow-x: hidden;
+}
+
+.nav__sibling {
+  margin-top: var(--nav-height);
 }
 
 /* SCROLLBAR */
@@ -98,7 +103,7 @@ html::-webkit-scrollbar-thumb:active {
   background: var(--primary-color);
 }
 
-@media (pointer:none), (pointer:coarse) {
+@media (pointer: none), (pointer: coarse) {
   html::-webkit-scrollbar {
     width: 0px;
   }

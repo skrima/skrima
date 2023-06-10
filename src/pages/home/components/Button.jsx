@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Button.css";
-import DelayedLink from "../../../components/DelayedLink";
+import DelayedLink from "./DelayedLink";
 
 function Button({ text, type, link, target, delayed, delay, ...props }) {
   let variation = "";

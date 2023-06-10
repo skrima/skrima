@@ -24,7 +24,6 @@
   outline: none !important;
 }
 
-
 .home-page__button:hover {
   background-color: black;
   color: white;
@@ -50,12 +49,11 @@
 }
 
 @media (hover: none) {
-
   .home-page__button {
     transition: none;
   }
 
-  .home-page__button:hover{
+  .home-page__button:hover {
     background-color: var(--off-white);
     color: black;
     border: 2px solid black;

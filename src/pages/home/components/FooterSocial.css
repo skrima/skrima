@@ -12,6 +12,12 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 415px) {
+  .social__link {
+    flex-basis: 100%;
+  }
+}
+
 .social__link::after {
   content: "";
   position: absolute;

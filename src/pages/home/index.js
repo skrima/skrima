@@ -6,14 +6,12 @@ import Community from "./scripts/Community";
 import Mission from "./scripts/Mission";
 import Footer from "./scripts/Footer";
 import "./styles/index.css";
-import Nav from "./components/Nav";
 import Overlay from "./scripts/Overlay";
 
 function Home() {
   return (
-    <div className="home-page">
+    <div className="nav__sibling home-page">
       <Overlay />
-      <Nav />
       <Title />
       <Overview />
       <Services />

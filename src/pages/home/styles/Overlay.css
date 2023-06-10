@@ -15,7 +15,7 @@
   z-index: 99; /* Ensure the circular pointer stays on top of other elements */
 }
 
-@media (pointer:none), (pointer:coarse) {
+@media (pointer: none), (pointer: coarse) {
   .circular-pointer {
     display: none;
   }

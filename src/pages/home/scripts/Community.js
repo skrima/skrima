@@ -5,7 +5,7 @@ import SvgLinesLeft from "../assets/LinesLeft";
 import SvgLinesRight from "../assets/LinesRight";
 import Button from "../components/Button";
 import useWindowSize from "react-use/lib/useWindowSize";
-import MyConfetti from "../../../components/MyConfetti";
+import MyConfetti from "../components/MyConfetti";
 
 function Community() {
   const { width, height } = useWindowSize();

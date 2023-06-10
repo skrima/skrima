@@ -26,7 +26,7 @@ const DelayedLink = ({ delay, to, target, ...props }) => {
   }, []);
 
   return (
-    <a href={to} target={target} {...props} onClick={clickHandler}>
+    <a href={to} target={target} className={props.className} onClick={clickHandler}>
       {props.children}
     </a>
   );

@@ -1,0 +1,50 @@
+.mission-section {
+  position: relative;
+  height: auto;
+  color: black;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.mission-section .mission-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mission-section .mission-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--page-padding);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 3rem;
+}
+
+.mission-section .mission-title__text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mission-section .mission-description {
+  padding: 3rem;
+  background-color: white;
+  color: black;
+  border-radius: var(--border-radius);
+  max-width: 900px;
+}
+
+.mission-section .mission-description .mission-description__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}

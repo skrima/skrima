@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import YouTube from "react-youtube";
 import { socials } from "../data/footer-data";
 import FooterSocial from "../components/FooterSocial";
-import "../styles/index.css"
+import "../styles/index.css";
 
 function Footer() {
   const videoId = "K4TOrB7at0Y";
@@ -56,10 +56,11 @@ function Footer() {
       </div>
       <div className="footer-legal">
         <small>
-          © 2023 SKRIMA. All rights reserved. <div className="legal__break" /><span className="legal__pipe">|</span>{" "}
-          <Link to={"/"}>Privacy Policy</Link> |{" "}
-          <Link to={"/"}>Terms of Service</Link> |{" "}
-          <Link to={"/"}>Image Credits</Link>
+          © 2023 SKRIMA. All rights reserved. <div className="legal__break" />
+          <span className="legal__pipe">|</span>{" "}
+          <Link to={"/privacy-policy"}>Privacy Policy</Link> |{" "}
+          <Link to={"/terms"}>Terms of Service</Link> |{" "}
+          <Link to={"/credits"}>Image Credits</Link>
         </small>
       </div>
     </footer>
