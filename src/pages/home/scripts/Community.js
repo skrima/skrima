@@ -25,7 +25,7 @@ function Community() {
           link={"https://chat.whatsapp.com/G5lh0pkN0nHKdehW0H3Skp"}
           target={"_blank"}
           delayed
-          delay={2000}
+          delay={3000}
           setShowConfetti={setShowConfetti}
         />
       </div>
