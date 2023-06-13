@@ -1,0 +1,12 @@
+.gallery-grid__footer {
+    margin-top: auto;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--page-padding);
+    box-sizing: border-box;
+}

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import "./Nav.css";
 import SvgFullColored from "../assets/logo/FullColored";
 import SvgFullWhite from "../assets/logo/FullWhite";
@@ -10,6 +10,8 @@ function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selected, setSelected] = useState(""); 
   const location = useLocation();
+  const ulRef1 = useRef(null);
+  const ulRef2 = useRef(null);
 
   useEffect(() => {
     const path = location.pathname.split("/").slice(-1)[0];
@@ -20,10 +22,40 @@ function Nav() {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    const handleClick = (event) => {
+      setMenuOpen(false);
+    };
+
+    const ul1 = ulRef1.current;
+    const ul2 = ulRef2.current;
+
+    const lis1 = ul1.querySelectorAll('li');
+    lis1.forEach((li) => {
+      li.addEventListener('click', handleClick);
+    });
+
+    const lis2 = ul2.querySelectorAll('li');
+    lis2.forEach((li) => {
+      li.addEventListener('click', handleClick);
+    });
+
+    return () => {
+      // Cleanup: remove event listeners
+      lis1.forEach((li) => {
+        li.removeEventListener('click', handleClick);
+      });
+
+      lis2.forEach((li) => {
+        li.removeEventListener('click', handleClick);
+      });
+    };
+  }, []);
+
   return (
     <Fragment>
       <div className="nav">
-      <ul className="nav__list">
+      <ul className="nav__list" ref={ulRef1}>
         <li className="nav__item logo__container">
           <Link to={"/"} className="nav__link">
             {selected === "" ? <SvgFullColored /> : <SvgFullWhite />}
@@ -87,7 +119,7 @@ function Nav() {
         </li>
       </ul>
       <div className={`nav__menu__container ${menuOpen ? "_open" : ""}`}>
-        <ul className="nav__menu">
+        <ul className="nav__menu" ref={ulRef2}>
           <li className="nav__menu__item">
             <Link to={"/company"} className={`nav__menu__link ${selected === "company" ? "_selected" : ""}`}>
               Company

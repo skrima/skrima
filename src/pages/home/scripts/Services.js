@@ -69,7 +69,7 @@ function Services() {
               return <ExamCard key={index} title={item.title} />;
             })}
           </div>
-          <Button text={"Register"} type={1} />
+          <Button text={"Learn More"} type={1} />
         </div>
       </div>
     </section>

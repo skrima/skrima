@@ -9,10 +9,12 @@
   --background-color: #000000;
   --text-color: #ffffff;
   --primary-color: #00ff80;
+  --primary-dark-color: #008141;
   --secondary-color: #ffff00;
   --border-color-white: #ffffff;
   --off-white: #fafafa;
   --red-color: #ff4040;
+  --dark-gray: #4C4C4C;
 
   /* FONTS */
   --font-family: "Inter", sans-serif;
