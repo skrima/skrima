@@ -14,7 +14,7 @@
   --border-color-white: #ffffff;
   --off-white: #fafafa;
   --red-color: #ff4040;
-  --dark-gray: #4C4C4C;
+  --dark-gray: #4C4C4C; 
 
   /* FONTS */
   --font-family: "Inter", sans-serif;
@@ -36,6 +36,15 @@ body {
 
 .nav__sibling {
   margin-top: var(--nav-height);
+}
+
+.page-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  margin-top: auto;
+  width: 100%;
 }
 
 /* SCROLLBAR */

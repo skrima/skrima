@@ -1,10 +1,10 @@
 import React from 'react'
 import Legal from '../../../components/Legal'
-import '../styles/index.css'
+import '../styles/Footer.css'
 
 function Footer() {
   return (
-    <footer className='page-footer'>
+    <footer className="page-footer">
         <Legal />
     </footer>
   )
