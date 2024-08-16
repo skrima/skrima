@@ -16,7 +16,7 @@ export const socials = [
   },
   {
     Icon: FaPhone,
-    text: "+234 903 804 3846",
+    text: "+234 903 804 3846\n+234 904 923 9905",
     link: "tel:+2349038043846",
   },
   {

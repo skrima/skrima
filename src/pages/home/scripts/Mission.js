@@ -20,7 +20,7 @@ function Mission() {
           </p>
         </div>
         <div className="mission-cta__container">
-          <Button text={"Support our Mission"} type={2} />
+          {/* <Button text={"Support our Mission"} type={2} /> */}
         </div>
       </div>
     </section>

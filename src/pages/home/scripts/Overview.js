@@ -18,7 +18,7 @@ function Overview() {
         })}
       </div>
 
-      <Button text="Contact Us" />
+      {/* <Button text="Contact Us" /> */}
     </section>
   );
 }
